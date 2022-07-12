@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Variable and Statement</title>
+</head>
+<body>
+    <!-- <script type="text/javascript">
+        let thisIsAString = 'This is s string';
+        let alsoAString = '25';
+        let isANumber = 25; -->
+    </script>
+    <!-- <script>
+    var first = 'John';
+    console.log(first);
+    let first = 'John';
+    console.log(first);
+    const first = 'John';
+    console.log(first);
+    </script> 
+    
+    <script>
+    var x = 'hey';
+    x = 'hi';
+    let cool = true;
+    cool = false;
+    console.log(x);
+    console.log(cool);
+    const age = 10;
+    age = 11; // wrong: throws error
+    
+    console.log(age);
+    </script> 
+    
+    <script>
+    /* dog = 'snickers'; // bad coding, don't do this
+    console.log(dog); // snickers (no error) */
+    'use strict';
+    dog = 'snickers'; // error: dog is not defined
+    console.log(dog);
+    </script> -->
+
+
+    <!-- <script>
+        let isEqual = (alsoAString == isANumber); /* This is true, they are both 25.*/
+        console.log(isEqual);
+        isEqual = (alsoAString === isANumber); // False one is a number, the other a string.
+        console.log(isEqual);
+    </script>
+
+    <script>
+        let concat = alsoAString + isANumber; // concat is now 2525
+        console.log(concat);
+        let addition = isANumber + isANumber; // addition is now 50
+        console.log(addition);
+    </script>
+
+    <script>
+        let alsoANumber = 3.05; // is equal to 3.05 (usually).
+        console.log(alsoANumber);
+        let floatError = 0.06 + 0.01; // is equal to 0.06999999999999999
+        console.log(floatError);
+        let anExponent = 1.23e+3; // is equal to 1230
+        console.log(anExponent);
+        let hexadecimal = 0xff; // is equal to 255.
+        console.log(hexadecimal);
+        let octal = 377; // is equal to 255.
+        console.log(octal);
+    </script>
+ -->
+    <!-- <script>
+        let isTrue = true; // This is a boolean, it can be true or false.
+        console.log(isTrue);
+        let isFalse = false; // This is a boolean, it can be true or false
+        console.log(isFalse);
+        let isArray = [ 100, 'one', 200, 300, '400', 500 ]; // This is an array.
+        console.log(isArray);
+        let valueFromArray = isArray[4]; // assign a single array element to a variable.
+        // in this case valueFromArray = '4'
+        console.log(valueFromArray);
+    </script> -->
+
+    <script>
+        let funcB = function() {// B is a functional pointer
+            return 100 + 200;
+        }
+        let resultB = funcB();
+        console.log(resultB);
+        let someFunction = function() {
+            return "I am a function!";
+        }
+        let alsoAFunction = someFunction; //No parentheses() so alsoAFunction becomes a function
+        let result = alsoAFunction();
+        // alsoAFunction is executed here so result stores the
+        // return value of the function which is "I am a function!"
+        console.log(result);
+    </script>
+
+
+    <!-- <script>
+    let isObject = {
+            'color': 'blue',
+            'dog': 'bark',
+            'array': [0, 1, 2, 3, 4, 5],
+            'myfunc': function () { console.log('do something!'); }
+            } 
+    let dog1 = isObject.dog; // dogl now stores the string 'bark'; console.log(dog1);
+            isObject.myfunc(); // display the value "do something!" in the console
+            let funcB = function () { return 100 + 200; }
+            let resultB = funcB();
+    
+    </script> -->
+</body>
+</html>

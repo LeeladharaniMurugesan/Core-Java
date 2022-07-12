@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Objects</title>
+</head>
+<body>
+<script type='text/javascript'>
+/* const cody = new Object();
+console.log( cody.living);//there is no property living by name in coding.
+cody.living = true;
+cody.age = 33;
+cody.gender = 'female';
+console.log( cody.living);
+console.log( cody.age);
+console.log( cody.gender);
+cody.getGender = function () { return cody.gender; };
+console.log(cody.getGender()); // logs 'male' */
+/* const myObject = new Object(); // produces an Object() object
+myObject['0'] = 'f';
+myObject['1'] = 'o';
+myObject['2'] = 'o';
+console.log(myObject); // logs Object { 0="f", 1="o", 2="o"}
+myObject.living = true;
+myObject.age=23;
+myObject.gender = 'female'; */
+/* const myString = new String('leeladharani'); // produces a String() object
+console.log(myString); // logs foo { 0="f", 1="o", 2="o"} */
+const Person = function (living, age, gender) {
+    this.living = living;
+    this.age = age;
+    this.gender = gender;
+    this.getGender = function () { return this.gender; };
+};
+// instantiate a Person object and store it in the cody constiable
+const cody = new Person(true, 33, 'female');
+console.log(cody);
+console.log( cody.living);
+console.log( cody.age);
+console.log( cody.gender);
+</script>
+</body>
+</html>

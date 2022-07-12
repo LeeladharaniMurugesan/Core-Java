@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Local Storage</title>
+</head>
+<body onload='output.innerText = localStorage.getItem("notes")'>
+	<!-- InnerText and innerHTNL BOTH ARE SAME.Adds text value as a child content to the element-->
+	<textarea id='t' placeholder="Address" spellcheck="true"
+		oninput='localStorage.setItem("notes",this.value)' style="width: 100%"></textarea>
+	<textarea id='output'><strong>value</strong></textarea>
+</body>
+</html>

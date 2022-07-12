@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Selectors</title>
+
+<style>
+.green {
+    background-color: green
+}
+
+li.yellow {
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+       
+    <div id="div1">
+           
+        <ol>
+            <li>Cricketer</li>
+        </ol>
+               
+        <ul>
+                       
+            <li>Dhoni</li>            
+            <li>Virat</li>            
+            <li class="green">Suresh Raina</li>            
+            <li>Rohit</li>        
+        </ul>
+           
+    </div>
+       
+    <div id="div2">Hello Selectors</div>
+    <!--  <input type="text" id="fname" placeholder = 'Enter first name'  onchange = "alert('hii')">  // popup it is a inbuild function  -->
+      <input type="text" id="fname" placeholder = 'Enter first name'  onchange = "myfunction()"> 
+    <!-- <script>
+                // Query Selector returns the first element (returns only one element)
+        var element1 = document.querySelector("li");
+        console.log(element1);
+        // Query Selector returns all li elements
+        var element2 = document.querySelectorAll("li");
+        console.log(element2);
+        var element3 = document.querySelector("ol > li");/* ul>li also it will returns first element */
+        console.log(element3);
+        console.log(element2);
+        //var element4 = document.querySelector("div");  // byTagName
+        //console.log(element4);
+        var element5 = document.querySelectorAll("div");
+        console.dir(element5);
+        var element6 = document.querySelectorAll("#div2");  //byId
+        console.dir(element6);
+        element6.style.color = "rose";
+        var element7 = document.querySelectorAll(".green");  //byCssClass
+        console.dir(element7);
+    </script> -->
+    <script type="text/javascript">
+        const arr = [ 1, 2, 3, 4, 5, 6 ];
+        console.log(arr);
+        //JSON to STRING
+        const strArr = JSON.stringify(arr);
+        console.log(strArr);
+
+        const myObj = {
+            firstname : 'leela',
+            lastlast : 'dharani'
+        };
+        console.log(myObj);
+        const strjson = JSON.stringify(myObj);
+        console.log(strjson);
+
+        //json parse; String to JSON
+        const arr1 = JSON.parse(strjson);
+        console.log(arr1);
+
+        var javastudentlist = { //  is a Array(like a map)  it has a nested array
+            "sudentlist" : [ {
+                "name" : "Ajith",
+                "age" : "22"
+            }, {
+                "name" : "Vijay",
+                "age" : "22"
+            }, {
+                "name" : "Tom",
+                "age" : "22"
+            } ],
+            "facultylist" : [ {
+                "name" : "Dhanush",
+                "age" : "42"
+            }, {
+                "name" : "Suriya",
+                "age" : "45"
+            }, {
+                "name" : "vikram",
+                "age" : "41"
+            } ]
+        };
+        console.log(javastudentlist);
+        function myfunction(){
+            var textElement = document.getElementById("fname");
+            console.log("Text changed "+ textElement.value);
+        }
+    </script>
+</body>
+</html>
